@@ -13,7 +13,17 @@ Further help [on Cake's Documentation.](http://book.cakephp.org/3.0/en/orm/behav
 
 Pass the single entity you wish to re-order, and a direction of ```up```, or ```down```, using:
 
-```$this->Model->move($entity, $direction);```
+```
+$this->Model->move($entity, $direction);
+```
+
+**Example**
+
+In ArticlesController.php:
+```
+$article = $this->Articles->get($id);
+$this->Articles->move($article, 'up');
+```
 
 ## To Do
 
