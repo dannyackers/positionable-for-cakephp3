@@ -28,7 +28,7 @@ $article = $this->Articles->get($id);
 $this->Articles->move($article, 'up');
 ```
 
-**Ordering Your Data App Wide**
+### Ordering Your Data App Wide
 
 You can set the default pagination order in ```AppController.php``` to cause the order to use the
 position column, then override in your other controllers.
